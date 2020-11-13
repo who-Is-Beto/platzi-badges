@@ -1,0 +1,25 @@
+#loadP{
+  width: 250px;
+  margin: 0;
+}
+
+#loading{
+  margin-top: 30px;
+}
+
+span{
+  margin: 0;
+  padding: 0;
+}
+
+#circle{
+  align-self: center;
+  margin-right: 20px;
+}
+
+@media (max-width: 700px){
+  #loadP{
+    width: 150px;
+  }
+}
+

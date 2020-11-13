@@ -1,0 +1,74 @@
+.Badges__hero {
+  width: 100%;
+  padding: 2rem 0;
+  background: url('../../images/estrellas.svg'), #1B1B25;
+  background-repeat: repeat;
+  margin-bottom: 1rem;
+}
+
+.Badges__hero>.Badges__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Badges__container {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+li {
+  margin: 0 auto;
+  display: flex;
+  max-width: 400px;
+/*   border: 1px solid black;*/
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 6px 0px #1B1B25;
+  padding: 20px;
+  justify-content: start;
+  align-self: center;
+}
+
+li img {
+  border-radius: 30px;
+  height: 80px;
+  width: 80px;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.userData {
+  font-size: 12px;
+}
+
+.userData p{
+  margin: 0;
+}
+
+.Badge_conf-logo {
+  margin-bottom: 2rem;
+}
+
+.Badges__buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8%;
+  margin-bottom: 1rem;
+}
+
+.notFound{
+  text-align: center;
+}
+
+.no{
+  display: none;
+}
+
+@media (max-width: 700px) { 
+  li{
+    width: 300px;
+  }
+}

@@ -1,0 +1,23 @@
+.errorMessage{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error{
+  align-items: center;
+
+}
+
+#errorButton{
+  font-size: 30px;
+  padding: 6px 56px;
+}
+
+#errorFont{
+  font-size: 60px;
+  font-weight: bolder;
+  margin: 0;
+}
