@@ -4,11 +4,12 @@
   "private": false,
   "homepage": "https://who-is-beto.github.io/platzi-badges",
   "scripts": {
+    "vercel-build": "npm run build",
+    "build": "webpack",
     "start": "npm-run-all -p client server",
     "client": "react-scripts start",
     "server": "json-server --port 3001 --watch server/db.json",
     "seed": "node server/seed.js",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
