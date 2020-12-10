@@ -10,6 +10,12 @@
   align-items: center;
 }
 
+.badge__new-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .Home__col {
   display: flex;
   flex-direction: column;
@@ -17,8 +23,41 @@
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+.badge__form{
+  display: flex;
+  justify-content: center;
+}
+
+.badge__invitation{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
   .Home__col {
     align-items: flex-start;
+  }
+
+  .badge__new-container{
+    display: block;
+  }
+
+  .col-6{
+    margin: 0;
+  }
+
+}
+@media screen and (max-width: 991px) {
+      .badge{
+        min-width: 76%;
+      }
+
+  .badge__invitation{
+    margin-bottom: 62px;
+  }
+
+  .badge__new-container{
+    justify-content: center;
   }
 }

@@ -13,8 +13,8 @@ class BadgeForm extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h1>{this.props.page} ATTENDENT</h1>
+      <div className="form__container">
+        <h1 className="new-attendent" >{this.props.page} ATTENDENT</h1>
 
         <form onSubmit={this.props.onSubmit}>
           <div className="form-grup">
@@ -47,7 +47,7 @@ class BadgeForm extends React.Component {
               name="twitter" value={this.props.formValues.twitter} />
           </div>
 
-          <button onClick={this.handleClick} className="btn btn-primary">Save</button>
+          <button onClick={this.handleClick} className="btn btn-primary save__badge">Save</button>
         </form>
         {this.props.error && (
           <p className="text-danger">{this.props.error.message}</p>

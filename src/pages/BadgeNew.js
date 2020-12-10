@@ -54,11 +54,11 @@ class BadgeNew extends React.Component {
       return <Loading />
     }
     return (
-      <div>
+      <>
         <Hero logo={colombia} />
         <div className="container">
-          <div className="row">
-            <div className="col-6">
+          <div className="badge__new-container">
+            <div className="badge__invitation">
               <Badge
                 firstName={this.state.form.firstName || 'First Name'}
                 lastName={this.state.form.lastName || 'Last Name'}
@@ -68,7 +68,7 @@ class BadgeNew extends React.Component {
                 avatar={Betorta} />
             </div>
 
-            <div className="col-6">
+            <div className="badge__form">
               <BadgeForm
                 page='NEW'
                 onSubmit={this.handleSubmit}
@@ -76,11 +76,9 @@ class BadgeNew extends React.Component {
                 error={this.state.error}
                 formValues={this.state.form} />
             </div>
-
-
           </div>
         </div>
-      </div>
+      </>
 
     )
   }

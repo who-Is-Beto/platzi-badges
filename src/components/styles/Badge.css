@@ -9,7 +9,7 @@ body{
   border-radius: 8px 8px 8px 8px;
   overflow: hidden;
   height: auto;
-  width: 100%;
+  min-width: 478px;
 }
 
 .badge_header {
@@ -54,6 +54,10 @@ body{
   font-style: italic;
 }
 
+.new-attendent{
+  text-align: center;
+}
+
 .BadgeNew__hero {
   width: 100%;
   padding: 2rem 1.2rem;
@@ -63,6 +67,14 @@ body{
   color: #ffffff;
   display: flex;
   justify-content: center;
+}
+
+.save__badge{
+  margin: 0 33%;
+}
+
+.form__container{
+  width: 348px;
 }
 
 .form-control{
