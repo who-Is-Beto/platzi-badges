@@ -1,7 +1,8 @@
 {
   "name": "platzi-badges",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://who-is-beto.github.io/platzi-badges",
   "scripts": {
     "start": "npm-run-all -p client server",
     "client": "react-scripts start",
@@ -9,10 +10,13 @@
     "seed": "node server/seed.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gh-pages": "^3.1.0",
     "md5": "^2.3.0",
     "react": "16.8.3",
     "react-dom": "16.8.3",

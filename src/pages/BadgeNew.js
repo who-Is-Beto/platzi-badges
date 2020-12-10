@@ -6,9 +6,12 @@ import colombia from '../images/Group 69.svg'
 import Badge from '../components/Badge'
 import '../components/styles/badges.css'
 import Betorta from '../images/beto.jpg'
+import Loading from '../components/formLoading'
 
 class BadgeNew extends React.Component {
   state = {
+    loading: false,
+    error: null,
     form: {
       firstName: '',
       lastName: '',
@@ -34,6 +37,8 @@ class BadgeNew extends React.Component {
     try {
       await api.badges.create(this.state.form)
       this.setState({ loading: false })
+
+      this.props.history.push('/badges')
     } catch (error) {
       this.setState({
         loading: false,
@@ -44,6 +49,10 @@ class BadgeNew extends React.Component {
   }
 
   render() {
+
+    if (this.state.loading) {
+      return <Loading />
+    }
     return (
       <div>
         <Hero logo={colombia} />
@@ -61,8 +70,10 @@ class BadgeNew extends React.Component {
 
             <div className="col-6">
               <BadgeForm
+                page='NEW'
                 onSubmit={this.handleSubmit}
                 onChange={this.handleChange}
+                error={this.state.error}
                 formValues={this.state.form} />
             </div>
 

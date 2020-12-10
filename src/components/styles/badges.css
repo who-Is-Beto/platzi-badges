@@ -39,6 +39,15 @@ li img {
   align-self: center;
   margin-right: 20px;
 }
+#list-element {
+  width: 100%;
+  display: flex;
+}
+
+.BadgesList{
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 .userData {
   font-size: 12px;

@@ -45,6 +45,8 @@ class Badges extends React.Component {
 
   componentDidMount() {
     this.fetchData()
+
+    this.IntervalId = setInterval(this.fetchData(), 60000)
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -62,6 +64,8 @@ class Badges extends React.Component {
   componentWillUnmount() {
     console.log('byeee')
     clearTimeout(this.timeId)
+
+    clearInterval(this.IntervalId)
   }
 
   render() {

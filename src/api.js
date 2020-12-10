@@ -30,6 +30,7 @@ const api = {
       //return []
     },
     create(badge) {
+      //throw new Error("500: Server Broken")
       return callApi(`/badges`, {
         method: 'POST',
         body: JSON.stringify(badge),

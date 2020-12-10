@@ -18,6 +18,6 @@ export default function Error(props) {
     case '500':
       return <ErrorPage image={e500} error={'Error 500 The server is broken :c'} />
     default:
-      return <ErrorPage image={unknow} error={'Unknow error D:'} />
+      return <ErrorPage image={unknow} error={`${props.error.message}`} />
   }
 }
