@@ -5,7 +5,7 @@
   "homepage": "https://who-is-beto.github.io/platzi-badges",
   "scripts": {
     "build": "react-scripts build",
-    "start": "npm-run-all -p client server",
+    "start": "react-scripts start",
     "client": "react-scripts start",
     "server": "json-server --port 3001 --watch server/db.json",
     "seed": "node server/seed.js",
